@@ -1,3 +1,14 @@
-body {
-  background-color: tomato;
+.body {
+  background-color: white;
+}
+.page-header {
+  background-color: white;
+}
+.logo {
+}
+.site-nav {
+}
+.auth-nav {
+}
+.accent {
 }
