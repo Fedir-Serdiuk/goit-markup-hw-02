@@ -1,5 +1,5 @@
 :root {
-  --title-text-color: #000000;
+  --title-text-color: #212121;
   --accent-color: #f5f4fa;
   --team-background-color: #f5f4fa;
   --primary-bg-color: #ffffff;
@@ -10,15 +10,15 @@
   --button-background-color: #2196f3;
   --text-color: #e91717;
   --contacts-text-color: #757575;
-  
+  --white-text-color: #ffffff;
+  --primary-text-color-group: #757575;
 }
 
-}
 /* Body */
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -79,6 +79,31 @@ ul {
   text-transform: uppercase;
 }
 
+.principles-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.principles-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.work-list-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 /* Section */
 .section-title {
   color: var(--title-text-color);
@@ -91,16 +116,25 @@ ul {
 
 /* Button */
 .button {
-  color: var(--primary-white-color);
-  background-color: var(--button-background-color);
-  text-align: center;
+  background-color: var(--acent-text-color);
+  color: var(--white-text-color);
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.625;
-
-  letter-spacing: 0.03em;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
+
+.link:hover,
+.link:focus,
+.contacts:hover,
+.contacts:focus,
+.button:active,
+.button-portfolio:active {
+  color: var(--acent-text-color);
+}
+
 .button-portfolio {
   color: var(--primary-text-color);
   background-color: var(--accent-color);
@@ -110,10 +144,49 @@ ul {
   left: 495px;
   top: 174px;
 }
+.button-portfolio:focus,
+.button-portfolio:hover {
+  background-color: var(--acent-text-color);
+  color: var(--white-text-color);
+}
 
-.team {
+.team-section {
   background-color: var(--team-background-color);
 }
+
+.team-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.84;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-group {
+  color: var(--primary-text-color-group);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
 /* Footer */
 .footer {
   background: var(--footer-background-color);
