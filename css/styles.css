@@ -1,110 +1,20 @@
 :root {
+  --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #f5f4fa;
-  --team-background-color: #f5f4fa;
-  --primary-bg-color: #ffffff;
-  --primary-white-color: #ffffff;
-  --primary-text-color: rgba(0, 0, 0, 0.8);
-  --footer-background-color: #2f303a;
   --acent-text-color: #2196f3;
-  --button-background-color: #2196f3;
-  --text-color: #e91717;
-  --contacts-text-color: #757575;
+  --contacts-text-color: rgba(255, 255, 255, 0.6);
+  --footer-background-color: #2f303a;
   --white-text-color: #ffffff;
-  --primary-text-color-group: #757575;
+  --grey-back-color: #f5f4fa;
 }
 
-/* Body */
-body {
-  background-color: #ffffff;
-  color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
-}
-a {
-  text-decoration: none;
-}
 ul {
   list-style-type: none;
 }
 
-/* Contacts */
-.contacts,
-.contacts.phone {
-  color: var(--contacts-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.02em;
+a {
+  text-decoration: none;
 }
-.contacts.adress {
-  color: var(--accent-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.02em;
-}
-.contacts.mail {
-  color: var(--acent-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14px;
-  letter-spacing: 0.02em;
-}
-
-/* Logo */
-.logo:hover,
-.logo:focus {
-  color: var(--acent-text-color);
-}
-.web {
-  color: blue;
-}
-.studio {
-  color: white;
-}
-
-/* Site nav */
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--title-text-color);
-}
-.site-nav .link.current {
-  color: var(--title-text-color);
-}
-
-/* Hero */
-.hero-title {
-  color: var(--primary-white-color);
-  background-color: black;
-  text-transform: uppercase;
-}
-
-.principles-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.principles-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.work-list-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-/* Section */
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -114,7 +24,50 @@ ul {
   text-align: center;
 }
 
-/* Button */
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+}
+
+/* Main Navigation*/
+.logo-web {
+  color: var(--acent-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-studio {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+
+.adress-top {
+  font-style: normal;
+}
+.contacts {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
+
 .button {
   background-color: var(--acent-text-color);
   color: var(--white-text-color);
@@ -135,26 +88,53 @@ ul {
   color: var(--acent-text-color);
 }
 
-.button-portfolio {
-  color: var(--primary-text-color);
-  background-color: var(--accent-color);
+/* Hero*/
+.hero-title {
+  color: #ffffff;
+  background-color: #2f303a;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   text-align: center;
-  text-align: right;
-  text-align: justify;
-  left: 495px;
-  top: 174px;
 }
-.button-portfolio:focus,
-.button-portfolio:hover {
-  background-color: var(--acent-text-color);
+
+/* Work principles*/
+
+.principles-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.principles-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* What do we do section*/
+.work-list-title {
   color: var(--white-text-color);
+  background-color: #2f303a;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
+/* Our team section*/
 .team-section {
-  background-color: var(--team-background-color);
+  background-color: var(--grey-back-color);
 }
-
-.team-name {
+.team-member-name {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -171,6 +151,68 @@ ul {
   letter-spacing: 0.03em;
 }
 
+/* Our clients section*/
+
+/* Adress section*/
+.footer {
+  background: var(--footer-background-color);
+}
+.footer-adress {
+  color: var(--white-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.foter {
+  color: var(--white-text-color);
+}
+.email,
+.phone {
+  color: var(--contacts-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.web-white {
+  color: var(--white-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.slogan {
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/*PORTFOLIO PAGE CSS*/
+
+.button-portfolio {
+  background-color: var(--grey-back-color);
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-portfolio:focus,
+.button-portfolio:hover {
+  background-color: var(--acent-text-color);
+  color: var(--white-text-color);
+}
+
 .portfolio-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -180,17 +222,18 @@ ul {
 }
 
 .portfolio-group {
-  color: var(--primary-text-color-group);
+  color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
-/* Footer */
-.footer {
-  background: var(--footer-background-color);
-}
-.foter.comon {
-  color: #ffffff;
+.portfolio-description {
+  color: var(--white-text-color);
+  background-color: #2196f3;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 }
